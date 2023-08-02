@@ -527,12 +527,14 @@
      }
 
      .r-4 .photo {
+         width: 100%;
          height: auto;
          min-height: 680px;
          margin-bottom: 8px;
      }
 
      .r-4 ol li {
+         width: 100%;
          height: auto;
          margin-bottom: 20px;
      }

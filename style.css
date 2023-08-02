@@ -538,7 +538,6 @@
      height: auto;
      margin-bottom: 20px;
  }
- }
 
  /* bg-gray */
  .bg-gray .card {
@@ -728,6 +727,7 @@
      font-size: 24px;
      background: #6C4700;
      border-radius: 0px 4px 4px 0px;
+     text-align: center;
  }
 
  button:hover {

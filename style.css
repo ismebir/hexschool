@@ -475,6 +475,7 @@
  }
 
  .r-4 .btn-style {
+     background: #FFFFFF;
      border: 2px solid #000000;
  }
 
@@ -525,7 +526,8 @@
      }
 
      .r-4 ol {
-         width: 100%
+         width: 100%;
+         height: auto;
      }
 
      .r-4 .photo {

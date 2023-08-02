@@ -521,17 +521,14 @@
          flex-direction: column-reverse;
      }
 
-     .r-4 .photo {
-         height: auto;
-         min-height: 680px;
-     }
-
      .r-4 ol {
          width: 100%;
          height: auto;
      }
 
      .r-4 .photo {
+         height: auto;
+         min-height: 680px;
          margin-bottom: 8px;
      }
 

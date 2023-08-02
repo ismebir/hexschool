@@ -1,0 +1,926 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol,
+ ul {
+     list-style: none;
+ }
+
+ blockquote,
+ q {
+     quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+
+
+ /* 主要code */
+ *,
+ *:before,
+ *:after {
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "SF Pro Text", "PingFang TC", sans-serif;
+     line-height: 1.5;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ a {
+     display: block;
+     text-decoration: none;
+ }
+
+ .a-hidden {
+     text-indent: 101%;
+     overflow: hidden;
+     white-space: nowrap;
+ }
+
+ /* 背景與文字顏色 */
+ .bg-primary {
+     background: #916000;
+ }
+
+ .bg-secondary {
+     background: #AC8A46;
+ }
+
+ .bg-gray {
+     background: #E0E0E0;
+ }
+
+ .text-primary {
+     color: #916000;
+ }
+
+ .text-secondary {
+     color: #AC8A46;
+ }
+
+ .text-black {
+     color: #000000;
+ }
+
+ .text-white {
+     color: #FFFFFF;
+ }
+
+ .text-gray {
+     color: #8D8D8D;
+ }
+
+ /* margin & paading */
+ /* margin / 單位4px */
+ .my-4 {
+     margin-top: 16px;
+     margin-bottom: 16px;
+ }
+
+ .mt-2 {
+     margin-top: 8px;
+ }
+
+ .mt-4 {
+     margin-top: 16px;
+ }
+
+ .mt-5 {
+     margin-top: 20px;
+ }
+
+ .mt-15 {
+     margin-top: 60px;
+ }
+
+ .mt-20 {
+     margin-top: 80px;
+ }
+
+ .ms-2 {
+     margin-left: 8px;
+ }
+
+ .ms-8 {
+     margin-left: 32px;
+ }
+
+ .ms-9 {
+     margin-left: 36px;
+ }
+
+ .me-2 {
+     margin-right: 8px;
+ }
+
+ .me-3 {
+     margin-right: 12px;
+ }
+
+ .me-5 {
+     margin-right: 20px;
+ }
+
+ .me-7 {
+     margin-right: 28px;
+ }
+
+ /* padding / 單位4px */
+ .py-2 {
+     padding-top: 8px;
+     padding-bottom: 8px;
+ }
+
+ .py-5 {
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+ .py-7 {
+     padding-top: 28px;
+     padding-bottom: 28px;
+ }
+
+ .py-10 {
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+
+
+ /* 常用 */
+ .d-flex {
+     display: flex;
+ }
+
+ .content-between {
+     justify-content: space-between;
+ }
+
+ .content-center {
+     justify-content: center;
+ }
+
+ .item-center {
+     align-items: center;
+ }
+
+ .flex-r-reverse {
+     flex-direction: row-reverse;
+ }
+
+ .flex-col {
+     flex-direction: column
+ }
+
+ .btn-style {
+     width: 350px;
+     height: 60px;
+     background: none;
+     border-radius: 30px;
+     font-size: 24px;
+     font-weight: 500;
+ }
+
+ /* 字型size */
+ h1 {
+     font-family: "SF Pro Text";
+     font-size: 40px;
+     font-weight: 700;
+ }
+
+ h2 {
+     font-family: "SF Pro Text";
+     font-size: 32px;
+     font-weight: 600;
+ }
+
+ h3 {
+     font-family: "SF Pro Text";
+     font-size: 24px;
+     font-weight: 600;
+ }
+
+
+ /* index-page */
+ /* header */
+ .container {
+     max-width: 1140px;
+     margin: 0 auto;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .nav a {
+     font-size: 20px;
+ }
+
+ .bars {
+     display: none;
+ }
+
+ .bars .fa-cart-shopping {
+     font-size: 20px;
+ }
+
+ .bars .fa-bars {
+     font-size: 36px;
+ }
+
+ .banner {
+     width: 100%;
+     height: 870px;
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .banner .container {
+     /* 確認是否有其他影響 */
+     height: 100%;
+ }
+
+ .banner .text {
+     width: 445px;
+ }
+
+ .banner .text p {
+     font-size: 24px;
+     font-weight: 400;
+ }
+
+ .banner .btn-style {
+     border: 2px solid #FFFFFF;
+ }
+
+ .banner .d-flex {
+     justify-content: flex-end;
+ }
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .web-nav {
+         display: none;
+     }
+
+     .bars {
+         display: flex;
+     }
+
+     .bars ul {
+         display: flex;
+     }
+
+     .banner {
+         height: 480px;
+     }
+
+     .banner .text {
+         width: 345px;
+     }
+ }
+
+ /* content-上半部 */
+ .row li {
+     width: 50%;
+ }
+
+ .row .text {
+     width: 350px;
+ }
+
+ .row .text p {
+     font-family: "PingFang TC";
+     font-size: 20px;
+     font-weight: 300;
+     text-align: justify;
+ }
+
+ .row .text a {
+     font-family: "PingFang TC";
+     font-weight: 600;
+ }
+
+ .row .photo {
+     width: 100%;
+     height: 555px;
+ }
+
+ .r-1 .photo {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index2.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .r-2 .photo {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true) no-repeat center / cover;
+ }
+
+ .r-3 .photo {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index4.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .r-4 .photo {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true) no-repeat center / cover;
+     height: 1080px;
+ }
+
+ .r-4 ol {
+     list-style-type: decimal;
+     /* 把數字推上去 */
+     list-style-position: inside;
+     width: 350px;
+ }
+
+ .r-4 ol li {
+     width: 100%;
+     margin-bottom: 52px;
+ }
+
+ .r-4 {
+     font-family: "SF Pro Text";
+     font-size: 24px;
+ }
+
+ .r-4 p {
+     font-family: "SF Pro Text";
+     font-size: 1px;
+     font-weight: 300;
+ }
+
+ .r-4 .btn-style {
+     border: 2px solid #000000;
+ }
+
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .container>.content {
+         margin-top: 40px;
+     }
+
+     .row {
+         flex-direction: column;
+         justify-content: center;
+         margin-bottom: 32px;
+     }
+
+     .row li {
+         width: 100%;
+     }
+
+     .row .photo {
+         width: 100%;
+         height: auto;
+         min-height: 350px;
+     }
+
+     .row .text {
+         width: 100%;
+     }
+
+     .row .text a {
+         margin-top: 8px;
+     }
+
+     .r-1,
+     .r-2,
+     .r-3,
+     .r-4 {
+         flex-direction: column-reverse;
+     }
+
+     .r-4 .photo {
+         height: auto;
+         min-height: 680px;
+     }
+
+     .r-4 ol {
+         width: 100%
+     }
+
+     .r-4 .photo {
+         margin-bottom: 8px;
+     }
+
+     .r-4 ol li {
+         margin-bottom: 20px;
+     }
+ }
+
+ /* bg-gray */
+ .bg-gray .card {
+     align-items: flex-start;
+     margin-left: -15px;
+     margin-right: -15px;
+ }
+
+ .bg-gray .card-item {
+     width: calc(100%/3);
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .card-item a {
+     width: 100%;
+     height: 540px;
+ }
+
+ .card-item li:nth-child(3),
+ .card-item li:nth-child(4) {
+     font-weight: 300;
+ }
+
+ .card-item .photo .img-1 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index6.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .card-item .photo .img-2 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index7.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .card-item .photo .img-3 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index8.jpg?raw=true) no-repeat center / cover;
+     background-color: rgba(0, 0, 0, .3);
+     background-blend-mode: multiply;
+     text-align: center;
+     /* 讓文字垂直置中 */
+     line-height: 540px;
+     font-size: 24px;
+     font-weight: 600;
+ }
+
+ .card-item li span {
+     text-decoration: line-through;
+ }
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .bg-gray {
+         padding-top: 32px;
+         padding-bottom: 0;
+         margin-top: 8px;
+     }
+
+     .bg-gray .card {
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .bg-gray .card-item {
+         width: 100%;
+         margin-bottom: 36px;
+     }
+
+     .card-item a {
+         height: auto;
+         min-height: 350px;
+     }
+
+     .card-item .photo .img-3 {
+         line-height: 350px;
+     }
+
+     .card-item li:nth-child(4) {
+         margin-top: 8px;
+     }
+ }
+
+ /* content下半部 */
+ .container>ul.content {
+     margin-left: -15px;
+     margin-right: -15px;
+ }
+
+ .container>ul.content>li {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .container>ul.content>li.photo {
+     width: calc(100%/3*2);
+ }
+
+ .container>ul.content>li.text {
+     width: calc(100%/3);
+ }
+
+ .container>ul.content>li.photo>a.img-5 {
+     width: 100%;
+     height: 520px;
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index9.jpg?raw=true) no-repeat center / cover;
+ }
+
+ /* 設定text-width文字會破版 */
+ .text-width a {
+     font-weight: 600;
+ }
+
+ .text-width p {
+     font-weight: 300;
+ }
+
+ .text-width p:first-of-type {
+     font-size: 20px;
+ }
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .container>ul.content {
+         flex-direction: column;
+         width: 100%;
+         margin-left: 0;
+         margin-right: 0;
+     }
+
+     .container>ul.content>li {
+         width: 100%;
+         padding-left: 0;
+         padding-right: 0;
+     }
+
+     .container>ul.content>li.photo,
+     .container>ul.content>li.text {
+         width: 100%;
+     }
+
+     .container>ul.content>li.photo>a.img-5 {
+         height: auto;
+         min-height: 520px;
+     }
+
+     .text-width h2,
+     .text-width p.mt-4,
+     .text-width a.mt-4 {
+         margin-top: 8px;
+     }
+ }
+
+ /* bg-img */
+ .bg-img {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true) no-repeat center / cover;
+     height: 600px;
+ }
+
+ /* 確認是否有其他影響 */
+ .bg-img .container {
+     height: 100%;
+ }
+
+ .bg-img .input-btn {
+     width: 350px;
+ }
+
+ .bg-img input {
+     width: 60%;
+     height: 60px;
+     border: 2px solid #916000;
+     border-right: none;
+     outline: none;
+     font-size: 16px;
+     padding-left: 16px;
+     border-radius: 4px 0px 0px 4px;
+ }
+
+ .bg-img button {
+     width: 40%;
+     height: 60px;
+     border: none;
+     border: 2px solid #6C4700;
+     font-size: 24px;
+     background: #6C4700;
+     border-radius: 0px 4px 4px 0px;
+ }
+
+ button:hover {
+     cursor: pointer;
+ }
+
+ .footer-s {
+     display: none;
+ }
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .info {
+         width: 100%;
+     }
+
+     .bg-img .input-btn {
+         width: 100%;
+     }
+
+     .footer {
+         display: none;
+     }
+
+     .footer-s {
+         display: flex;
+     }
+
+     .footer-s ul li:nth-child(2) {
+         font-size: 14px;
+     }
+ }
+
+
+ /* product page */
+ .menu li {
+     font-size: 20px;
+     padding-top: 14px;
+     padding-bottom: 14px;
+ }
+
+ .bg-primary a {
+     font-size: 20px;
+ }
+
+ .card-product {
+     margin-left: -15px;
+     margin-right: -15px;
+     flex-wrap: wrap;
+ }
+
+ .product-item {
+     width: calc(100%/4);
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .product-item .product-img {
+     width: 100%;
+     height: 255px;
+ }
+
+ .product-item li:nth-child(3),
+ .product-item li:nth-child(4) {
+     font-weight: 300;
+ }
+
+ .product-item span {
+     text-decoration: line-through;
+ }
+
+ .product-item .img-1 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products1.jpg?raw=true) no-repeat center / cover;
+
+ }
+
+ .product-item .img-2 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product1.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-3 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product3.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-4 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products4.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-5 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product2.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-6 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products7.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-7 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products5.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-8 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products8.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-9 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products10.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-10 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products12.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-11 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products11.jpg?raw=true) no-repeat center / cover;
+ }
+
+ .product-item .img-12 {
+     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products3.jpg?raw=trues) no-repeat center / cover;
+ }
+
+ .pg-number a {
+     font-size: 20px;
+ }
+
+ .pg-number a:active {
+     text-decoration: underline;
+     color: #AC8A46;
+ }
+
+ @media (max-width: 576px) {
+     .container {
+         max-width: 375px;
+     }
+
+     .web-nav {
+         display: none;
+     }
+
+     .bars {
+         display: flex;
+     }
+
+     .bars ul {
+         display: flex;
+     }
+
+     .menu {
+         display: none;
+     }
+
+     .card-product {
+         padding-left: 7.5px;
+         padding-right: 7.5px;
+     }
+
+     .product-item {
+         width: 50%;
+         padding-left: 7.5px;
+         padding-right: 7.5px;
+         margin-top: 30px;
+     }
+
+     .product-item .product-img {
+         width: 100%;
+         height: auto;
+         min-height: 165px;
+     }
+
+     .pages {
+         margin-top: 50px;
+     }
+
+     .bg-img {
+         margin-top: 40px;
+     }
+
+     .info {
+         width: 100%;
+     }
+
+     .bg-img .input-btn {
+         width: 100%;
+     }
+
+     .footer {
+         display: none;
+     }
+
+     .footer-s {
+         display: flex;
+     }
+
+     .footer-s ul li:nth-child(2) {
+         font-size: 14px;
+     }
+ }
